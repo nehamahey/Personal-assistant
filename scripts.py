@@ -13,15 +13,15 @@ def speak(data):
 def starting():
     hr = int(datetime.datetime.now().hour)
     if hr>=0 and hr<12:
-        speak("Good morning sir!")
+        speak("Good morning mam!")
     elif hr>=12 and hr<18:
-        speak("Good Afternoon sir!")
+        speak("Good Afternoon mam!")
     else:
-        speak("Good Evening sir!")
+        speak("Good Evening mam!")
     speak("I am your assistant Jarvis")  
 
 def ask_name():
-    speak("What should i call you sir")
+    speak("What should i call you mam")
     while 1:
         name = get_command()
         if name!='':
